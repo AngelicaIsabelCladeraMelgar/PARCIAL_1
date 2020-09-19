@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParcialIsabelCladera", "Par
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectParcialIsabelCladera.Test", "UnitTestProjectParcialIsabelCladera.Test\UnitTestProjectParcialIsabelCladera.Test.csproj", "{0076DE26-0E2F-4C43-81CC-81274F0F94FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "admParcial1IsabelCladera", "admParcial1IsabelCladera\admParcial1IsabelCladera.csproj", "{0D6A1B7D-4D6A-4303-B4BD-FD8CB523CBFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "admParcial1IsabelCladera.Tests", "admParcial1IsabelCladera.Tests\admParcial1IsabelCladera.Tests.csproj", "{A68922DD-8FBA-44F1-8539-58785DED31F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0076DE26-0E2F-4C43-81CC-81274F0F94FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0076DE26-0E2F-4C43-81CC-81274F0F94FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0076DE26-0E2F-4C43-81CC-81274F0F94FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D6A1B7D-4D6A-4303-B4BD-FD8CB523CBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6A1B7D-4D6A-4303-B4BD-FD8CB523CBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6A1B7D-4D6A-4303-B4BD-FD8CB523CBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6A1B7D-4D6A-4303-B4BD-FD8CB523CBFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68922DD-8FBA-44F1-8539-58785DED31F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68922DD-8FBA-44F1-8539-58785DED31F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68922DD-8FBA-44F1-8539-58785DED31F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68922DD-8FBA-44F1-8539-58785DED31F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

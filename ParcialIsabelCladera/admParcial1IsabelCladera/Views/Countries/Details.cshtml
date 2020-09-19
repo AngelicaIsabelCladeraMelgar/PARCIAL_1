@@ -1,0 +1,66 @@
+﻿@model admParcial1IsabelCladera.Models.Country
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Country</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Region)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Region)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.area)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.area)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.calllingCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.calllingCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Languages)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Languages)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.flags)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.flags)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.alpha3code }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
