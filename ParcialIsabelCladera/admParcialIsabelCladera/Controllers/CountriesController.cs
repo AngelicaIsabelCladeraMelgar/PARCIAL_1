@@ -15,12 +15,14 @@ namespace admParcialIsabelCladera.Controllers
         private DataContext db = new DataContext();
 
         // GET: Countries
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.Countries.ToList());
         }
 
         // GET: Countries/Details/5
+        [Authorize]
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -36,6 +38,7 @@ namespace admParcialIsabelCladera.Controllers
         }
 
         // GET: Countries/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -44,6 +47,7 @@ namespace admParcialIsabelCladera.Controllers
         // POST: Countries/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "alpha3code,Region,name,area,calllingCode,Languages,flags")] Country country)
@@ -59,6 +63,7 @@ namespace admParcialIsabelCladera.Controllers
         }
 
         // GET: Countries/Edit/5
+        [Authorize]
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -76,6 +81,7 @@ namespace admParcialIsabelCladera.Controllers
         // POST: Countries/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "alpha3code,Region,name,area,calllingCode,Languages,flags")] Country country)
@@ -90,6 +96,7 @@ namespace admParcialIsabelCladera.Controllers
         }
 
         // GET: Countries/Delete/5
+        [Authorize]
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -105,6 +112,7 @@ namespace admParcialIsabelCladera.Controllers
         }
 
         // POST: Countries/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
